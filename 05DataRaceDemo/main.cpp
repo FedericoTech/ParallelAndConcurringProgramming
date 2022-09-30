@@ -10,6 +10,7 @@ unsigned int garlic_count = 0;
 
 void shopper()
 {
+	//this thread adds all those garlics to the list
 	for(int i = 0; i < 10000000; i++){
 		++garlic_count;
 	}
