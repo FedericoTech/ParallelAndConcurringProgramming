@@ -24,7 +24,7 @@ void philosopher(std::mutex &first_chopstick, std::mutex &second_chopstick)
 		if(sushi_count) {
 			sushi_count--;
 		}
-		/* we not longer need to manually unlock the mitexes. they will be unlocked by scoped_lock at the end of the scope.
+		/* we not longer need to manually unlock the mitexes. they will be unlocked by scoped_lock at the end of the scope .
 		second_chopstick.unlock();
 		first_chopstick.unlock();
 		*/
